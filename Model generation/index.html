@@ -1,10 +1,35 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
     <title></title>
 	<meta charset="utf-8" />
 </head>
 <body>
 
+    <div id="app" class="container">
+        
+        <h1>Select entity:</h1>
+
+        <form role="form" data-bind="submit: searchEntity">
+            <div class="form-group">
+                <input data-bind="value: entityName" type="text" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+
+    </div>
+
+
+    <script src="node_modules/knockout/build/output/knockout-latest.debug.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/q/q.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/requirejs/require.js"></script>
+    <script src="app/main.js"></script>
+    <script src="app/test.js"></script>
 </body>
+
 </html>
